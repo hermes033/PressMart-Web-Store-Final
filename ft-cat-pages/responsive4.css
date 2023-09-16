@@ -1,0 +1,2685 @@
+/*Fonts font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Dancing+Script&family=Poppins:wght@100;200;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 150vh;
+}
+
+/*Pop Up*/
+/* Popup'ı gizle */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Popup içeriği */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Kapat düğmesi */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*Header Top Red*/
+
+.headerTopRed {
+    font-family: 'Poppins', sans-serif;
+    background: #CD313E;
+    color: white;
+    height: 2.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerTopLeft {
+    width: 17.5%;
+    box-shadow: 0.1px 0.1px 1px white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headerTopIcons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerTopIcons a {
+    color: white;
+}
+
+.headerTopIcons a:hover {
+    color: white;
+}
+
+.headerTopRight {
+    font-size: 0.75em;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0.1px 0.1px 1px white;
+}
+
+.headerTopRight #arrowBottom1,
+#arrowBottom2 {
+    cursor: pointer;
+}
+
+.langText,
+.money {
+    cursor: pointer;
+}
+
+/*Header Hover*/
+
+#solaVerilecek {
+    margin-right: 2.1em;
+}
+
+#acilanDiv2 {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    position: absolute;
+}
+
+#acilanDiv2 {
+    right: 13em;
+    margin-top: 4.5em;
+    box-shadow: 1px 1px 5px black;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#acilanDiv2 .topDiv {
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.dropBtn {
+    background: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+.dropdown-menu a {
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+}
+
+/*Real Header*/
+
+#bottomCont {
+    height: 5em;
+    box-shadow: 0.1px 1px 0.1px rgba(198, 203, 208, 0.632);
+}
+
+.pressMartHeader {
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pressMartHeader .closeDiv {
+    display: none;
+}
+
+.pressMartLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 19%;
+}
+
+.pressMartLeft .supemail {
+    font-size: 0.9em;
+}
+
+.pressMartLeft .prsMartIcon i {
+    display: flex;
+    margin-bottom: 0.5em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #CD313E;
+    font-size: 2em;
+}
+
+.pressMartLeft .boldSpan {
+    font-weight: bold;
+
+}
+
+.pressMartOrta {
+    cursor: pointer;
+    display: flex;
+}
+
+.pressMartOrta .textPressMart {
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.pressMartRight {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pressMartRight .rightIcon {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pressMartRight .rightIcon:hover {
+    color: #CD313E;
+}
+
+.pressMartRight .rightIcon i {
+    font-size: 1.3em;
+}
+
+.pressMartRight .rightIcon p {
+    font-size: 0.8em;
+}
+
+.pressMartHeader .btn {
+    display: none;
+}
+
+.pressMartRight #open .btn {
+    display: block;
+}
+
+.pressMartRight #exampleModal {
+    margin-top: 10em;
+    margin-left: -14.5em;
+    display: block;
+}
+
+.pressMartRight .modal-content {
+    width: 60em;
+    height: 18em;
+}
+
+.pressMartRight .flexVer {
+    margin: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pressMartRight .flexVer .leftModal {
+    background: #cd313e;
+    box-shadow: 2px 2px 10px #cd313e;
+    border-radius: 35px;
+    color: white;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pressMartRight .flexVer .leftModal .textLogIn {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em auto;
+}
+
+.pressMartRight .flexVer .leftModal .textGetAcc {
+    font-size: 1em;
+    width: 40%;
+    height: 100%;
+    text-align: justify;
+}
+
+.pressMartRight #myAccBtn {
+    background: #CD313E;
+    color: white;
+    width: 90%;
+    border: none;
+    height: 2.5em;
+    font-weight: bold;
+    transition: 0.4s all;
+}
+
+.pressMartRight #myAccBtn:hover {
+    opacity: 0.9;
+}
+
+.pressMartRight input::placeholder {
+    font-size: 0.8em;
+}
+
+.pressMartRight form .col-sm-10 {
+    margin-left: 1em;
+}
+
+.pressMartRight .offcanvas-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.pressMartRight .form-control {
+    width: 100%;
+}
+
+#open .btn-close {
+    font-size: 0.7em;
+    margin-top: 0.1em;
+    background-color: #CD313E;
+    opacity: 1;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 90%;
+}
+
+/*Carusel-Img Section*/
+
+.imgCarousel {
+    width: 80%;
+    margin: 0 auto;
+    height: 35rem;
+}
+
+#section1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5em auto;
+}
+
+/*Sol Carousel Sekil Deyisen Hisse*/
+
+.leftImg {
+    width: 65%;
+    height: 30em;
+}
+
+.leftImg .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.leftImg .box .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.leftImg .carouselLayout {
+    margin: 0 auto;
+    color: white;
+    width: 100%;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    padding-top: 5em;
+}
+
+#carouselLayoutId {
+    align-items: flex-start;
+}
+
+.carouselLayout .carouseText {
+    width: 50%;
+    justify-content: space-evenly;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carouselLayout .carouseText .bestDigital {
+    color: #CD313E;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+}
+
+.carouselLayout .carouseText .hdCam {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.carouselLayout .carouseText .uptoOff {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.carouselButton {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 2em;
+}
+
+#colorRed {
+    color: #CD313E;
+    background-color: #CD313E;
+}
+
+.carouselButton .buyNow {
+    background-color: #CD313E;
+    color: white;
+    border: none;
+    width: 8em;
+    height: 2.7em;
+    font-weight: bold;
+}
+
+.carouselButton .readMore {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    width: 9em;
+    height: 2.7em;
+    font-weight: bold;
+    transition: 0.35s ease-in-out;
+}
+
+.carouselButton .readMore:hover {
+    background: #CD313E;
+    border: #CD313E;
+}
+
+#carBackImg1 {
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-slider-2.jpg);
+    background-size: cover
+}
+
+#carBackImg2 {
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-slider-1.jpg);
+    background-size: cover;
+}
+
+/*Sag Alt-Alta Sekil Olan Hisse*/
+
+.rightImg {
+    width: 30%;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box1,
+.box2 {
+    height: 14.5em;
+}
+
+.box1 {
+    transition: 0.3s ease-in-out;
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-banner-1.jpg);
+    background-size: cover;
+}
+
+.box1:hover,
+.box2:hover {
+    transform: scale(1.03);
+}
+
+.box2 {
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-banner-2.jpg);
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.boxFrontTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em auto;
+}
+
+#solaCek {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 1em;
+}
+
+.mFshn {
+    color: white;
+    background-color: #CD313E;
+    padding-left: 0.4em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-right: 0.4em;
+    font-size: 1em;
+}
+
+.acs {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 2.2em;
+}
+
+.smlText {
+    color: white;
+}
+
+.shopNow {
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+/*Four Icons Section*/
+
+.fourIcons .container-fluid {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fourIcons .container-fluid .flexIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8em;
+    width: 100%;
+    margin: -2em auto;
+}
+
+.fourIcons .container-fluid .flexIcons .flexIcon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+}
+
+.fourIcons .container-fluid .flexIcons .flexIcon .leftFlexIcon i {
+    font-size: 2.5em;
+    color: #CD313E;
+}
+
+.fourIcons .container-fluid .flexIcons .flexIcon .rightFlexText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 60%;
+}
+
+.fourIcons .container-fluid .flexIcons .flexIcon .rightFlexText .flexBoldText {
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    color: black;
+}
+
+.fourIcons .container-fluid .flexIcons .flexIcon .rightFlexText .flexLightText {
+    font-size: 0.70em;
+    color: black;
+}
+
+/*Section Featured Categories*/
+
+.featuredCategories {
+    margin: 3em auto;
+}
+
+.featuredCategories .ftText {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.featuredCategories .container-fluid {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 35em;
+    width: 80%;
+    height: 100%;
+}
+
+.featuredCategories .container-fluid .ftCategory {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+}
+
+.featuredCategories .container-fluid .ftCategory .ftCatTop {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in;
+}
+
+.ftCatTop:hover {
+    box-shadow: 1px 1px 5px slategrey;
+}
+
+#men {
+    cursor: pointer;
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Men-Category-430x502.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#women {
+    cursor: pointer;
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Women-Category-430x502.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#watches {
+    cursor: pointer;
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Watch-Category-430x502.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#bagsBack {
+    cursor: pointer;
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Bags-Category-430x502.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#shoes {
+    cursor: pointer;
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Shoes-Category-430x502.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#accessori {
+    cursor: pointer;
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Accessories-Category-430x502.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.ftBottom {
+    width: 100%;
+}
+
+.ftBottom a {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.ftBottom .topAll,
+.showAll {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.ftBottom .topAll:hover {
+    color: #CD313E;
+}
+
+.ftBottom .showAll {
+    color: #CD313E;
+}
+
+.ftBottom nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftBottom nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+.ftBottom nav ul li a:hover {
+    color: #CD313E;
+}
+
+/*Featured Categories Alt Hisse*/
+
+#respOpen {
+    display: none;
+}
+
+#respClose {
+    display: block;
+}
+
+.featuredAlt {
+    width: 82%;
+    margin: 5em auto;
+    height: 29em;
+}
+
+.featuredAlt .container-fluid {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+/*left*/
+.featuredAlt .container-fluid .leftFeaturedAlt {
+    transition: 0.8s all;
+    width: 50%;
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-banner-3.jpg);
+    background-size: cover;
+}
+
+/*Hover Soldan Saga Gelme*/
+
+.featuredAlt .container-fluid .leftFeaturedAlt .leftFeaturedAltFront {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45%;
+    width: 50%;
+    text-align: left;
+    margin: 8em 2em;
+}
+
+.featuredAlt .container-fluid .leftFeaturedAlt .leftFeaturedAltFront .nwTop {
+    font-size: 1.1em;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    color: white;
+}
+
+.featuredAlt .container-fluid .leftFeaturedAlt .leftFeaturedAltFront .ortaTwoText p {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.featuredAlt .container-fluid .leftFeaturedAlt .leftFeaturedAltFront .ortaTwoText .uptoFaiz {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+}
+
+.featuredAlt .container-fluid .leftFeaturedAlt .leftFeaturedAltFront .shopNowFtAlt button {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid white;
+    width: 8em;
+    height: 2.6em;
+    font-size: 0.9em;
+    background: transparent;
+}
+
+.uptoFaiz .colorRedFaiz {
+    color: #CD313E;
+}
+
+/*orta*/
+.featuredAlt .container-fluid .ortaFeaturedAlt {
+    transition: 0.8s ease-in;
+    background-size: cover;
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-banner-4.jpg);
+    width: 22%;
+}
+
+.featuredAlt .container-fluid .ortaFeaturedAlt .leftFeaturedAltFront {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10em auto;
+}
+
+.ortaFeaturedAlt .leftFeaturedAltFront .nwTop {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.ortaFeaturedAlt .leftFeaturedAltFront .ortaTwoText .mensfash {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.ortaFeaturedAlt .leftFeaturedAltFront .shopNowFtAlt button {
+    color: white;
+    border: 2px solid white;
+    width: 8em;
+    height: 2.5em;
+    background: transparent;
+    font-weight: bold;
+}
+
+/*right*/
+.featuredAlt .container-fluid .rightFeaturedAlt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+}
+
+.featuredAlt .container-fluid .rightFeaturedAlt .rightFeaturedAltTop {
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-banner-5.jpg);
+    background-size: cover;
+    height: 48%;
+}
+
+.featuredAlt .container-fluid .rightFeaturedAlt .leftFeaturedAltFront {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em auto;
+}
+
+.rightFeaturedAlt .leftFeaturedAltFront .nwTop {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.rightFeaturedAlt .leftFeaturedAltFront .ortaTwoText .mensfash {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.rightFeaturedAlt .leftFeaturedAltFront .shopNowFtAlt button {
+    color: white;
+    border: 2px solid white;
+    width: 7em;
+    height: 2.2em;
+    background: transparent;
+    font-weight: bold;
+}
+
+.featuredAlt .container-fluid .rightFeaturedAlt .rightFeaturedAltBottom {
+    background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-banner-6.jpg);
+    background-size: cover;
+    height: 48%;
+}
+
+/*PopUp*/
+.popup .popup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50em;
+    height: 25em;
+    background-color: #CD313E;
+}
+
+.popup .popup-content .popLeft {
+    background-image: url(https://pressmart.presslayouts.com/wp-content/themes/pressmart/inc/admin/assets/images/newsletter-banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.popup .popup-content .popRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.popup .popRightText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.popup .popRightText .upto {
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+}
+
+.popup .popUploremText {
+    color: white;
+    width: 100%;
+}
+
+.popup .popUpInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40%;
+    flex-direction: column;
+}
+
+.popup .popup-content .popUpInput .popUpYea {
+    outline: none;
+    border: none;
+    width: 20em;
+    height: 2.5em;
+    border-radius: 25px;
+    padding: 1em;
+}
+
+.popup .subsPopUp {
+    width: 6em;
+    height: 2em;
+    outline: none;
+    border: none;
+    background: white;
+    color: #CD313E;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.popup .xBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/*!-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*! Responsivlik Mobil Ucun */
+@media (max-width: 992px) {
+
+    /*Header Red*/
+
+    .headerTopRed {
+        font-family: 'Poppins', sans-serif;
+        background: #CD313E;
+        color: white;
+        width: 100%;
+        height: 2.5em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .headerTopLeft {
+        display: none;
+    }
+
+    .headerTopRight {
+        width: 100%;
+    }
+
+    #solaVerilecek {
+        right: 2em;
+    }
+
+    /*Header*/
+
+    #bottomCont {
+        height: 5em;
+        box-shadow: 0.1px 1px 0.1px rgba(198, 203, 208, 0.632);
+    }
+
+    .pressMartHeader {
+        margin: 1em auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .pressMartHeader {
+        margin: 0 auto;
+        display: flex;
+        height: 5em;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .pressMartHeader .closeDiv {
+        display: block;
+        border: none;
+    }
+
+    .pressMartLeft {
+        display: none;
+    }
+
+    .pressMartHeader .btn {
+        cursor: pointer;
+        display: block;
+        background: transparent;
+        color: black;
+        border: none;
+        font-size: 1.2em;
+        transition: 0.5s ease-in-out;
+    }
+
+    .pressMartHeader .btn:hover {
+        background: transparent;
+        color: black;
+        transform: scale(1.25);
+    }
+
+    .pressMartOrta {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .pressMartOrta .textPressMart {
+        font-weight: bolder;
+        font-size: 1.3em;
+        margin-top: 0.4em;
+    }
+
+    .pressMartRight {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .pressMartRight .rightIcon {
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .pressMartRight #close {
+        display: none;
+    }
+
+    .pressMartRight .rightIconBottomText {
+        display: none;
+    }
+
+    .pressMartRight .rightIcon:hover {
+        color: #CD313E;
+    }
+
+    .pressMartRight .rightIcon i {
+        font-size: 1.3em;
+    }
+
+    .pressMartRight .rightIcon p {
+        font-size: 0.8em;
+    }
+
+    .pressMartRight #exampleModal {
+        display: none;
+    }
+
+    #acilanDiv2 {
+        display: none;
+    }
+
+    /*Navbar Click Left Slide Canvas*/
+
+    .offcanvas-header {
+        border-bottom: 1px solid rgba(112, 128, 144, 0.421);
+    }
+
+    .offcanvas-header .canvasTop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .canvasTop .leftTopCanvas {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+    }
+
+    .canvasTop .leftTopCanvas i {
+        font-size: 1.3em;
+    }
+
+    .canvasTop .leftTopCanvas .logsignText {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+    /*menu-category*/
+
+    .offcanvas-menu-category {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 4em;
+    }
+
+    .offcanvas-menu-category .menuImp {
+        border: none;
+        background: white;
+        color: black;
+        font-size: 1.3em;
+        font-weight: bold;
+        transition: 0.4s all;
+    }
+
+    .offcanvas-menu-category .menuImp:hover {
+        color: #CD313E;
+    }
+
+    /*canvas body*/
+
+    .offcanvas-body {
+        width: 100%;
+    }
+
+    .offcanvas-body nav {
+        height: 80%;
+    }
+
+    .offcanvas-body nav ul {
+        height: 100%;
+    }
+
+    .offcanvas-body nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        height: 100%;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .offcanvas-body nav ul li a {
+        border: 1px solid rgba(112, 128, 144, 0.283);
+        height: 4em;
+        display: flex;
+        align-items: center;
+        color: black;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: 0.4s all;
+        text-decoration: none;
+    }
+
+    .offcanvas-body a:hover {
+        color: #CD313E;
+    }
+
+    /*footer*/
+
+    .offcanvas-footer {
+        margin-bottom: 4em;
+    }
+
+    .offcanvas-footer .offcanvas-icons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .offcanvas-footer .offcanvas-icons a {
+        color: black;
+    }
+
+    /*Carusel-Img Section*/
+
+    .imgCarousel {
+        width: 100%;
+        margin: 0 auto;
+        height: 45em;
+    }
+
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 2.5em auto;
+    }
+
+    /*Sol Carousel Sekil Deyisen Hisse*/
+
+    .leftImg {
+        width: 100%;
+        height: 14.5em;
+    }
+
+    .leftImg .box {
+        position: relative;
+        width: 100%;
+        height: 14.5em;
+    }
+
+    .leftImg .box .carousel-inner {
+        width: 100%;
+        height: 14.5em;
+    }
+
+    .leftImg .carouselLayout {
+        margin: 0 auto;
+        color: white;
+        width: 100%;
+        height: 13.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: last baseline;
+        padding-top: 5em;
+    }
+
+    #carouselLayoutId {
+        align-items: flex-start;
+    }
+
+    .carouselLayout .carouseText {
+        width: 50%;
+        justify-content: space-evenly;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carouselLayout .carouseText .bestDigital {
+        color: #CD313E;
+        font-family: 'Dancing Script', cursive;
+        font-size: 2em;
+    }
+
+    .carouselLayout .carouseText .hdCam {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .carouselLayout .carouseText .uptoOff {
+        font-size: 0.8em;
+        font-weight: 200;
+    }
+
+    .carouselButton {
+        margin-top: 3.2em;
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    #colorRed {
+        color: #CD313E;
+        background-color: #CD313E;
+    }
+
+    .carouselButton .buyNow {
+        background-color: #CD313E;
+        color: white;
+        border: none;
+        width: 6em;
+        height: 2em;
+        font-size: 0.6em;
+        font-weight: bold;
+    }
+
+    .carouselButton .readMore {
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        width: 6.5em;
+        font-size: 0.6em;
+        height: 2em;
+        font-weight: bold;
+        transition: 0.35s ease-in-out;
+    }
+
+    .carouselButton .readMore:hover {
+        background: #CD313E;
+        border: #CD313E;
+    }
+
+    #carBackImg1 {
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-slider-2.jpg);
+        background-size: cover
+    }
+
+    #carBackImg2 {
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-slider-1.jpg);
+        background-size: cover;
+    }
+
+    /*Sag Alt-Alta Sekil Olan Hisse*/
+
+    .rightImg {
+        width: 100%;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box1,
+    .box2 {
+        height: 14.5em;
+    }
+
+    .box1 {
+        transition: 0.3s ease-in-out;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-banner-1.jpg);
+        background-size: cover;
+    }
+
+    .box1:hover,
+    .box2:hover {
+        transform: scale(1.03);
+    }
+
+    .box2 {
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-banner-2.jpg);
+        background-size: cover;
+        transition: 0.3s ease-in-out;
+    }
+
+    .boxFrontTop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2em auto;
+    }
+
+    #solaCek {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-left: 1em;
+    }
+
+    .mFshn {
+        color: white;
+        background-color: #CD313E;
+        padding-left: 0.4em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        padding-right: 0.4em;
+        font-size: 1em;
+    }
+
+    .acs {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        font-size: 2.2em;
+    }
+
+    .smlText {
+        color: white;
+    }
+
+    .shopNow {
+        font-weight: bold;
+        background: transparent;
+        color: white;
+        border: none;
+    }
+
+    /*Four Icons Section*/
+
+    .fourIcons .container-fluid {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .fourIcons .container-fluid .flexIcons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin: 2em auto;
+
+    }
+
+    .fourIcons .container-fluid .flexIcons .flexIcon {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 6em;
+    }
+
+    .fourIcons .container-fluid .flexIcons .flexIcon .leftFlexIcon i {
+        font-size: 2.5em;
+        color: #CD313E;
+    }
+
+    .fourIcons .container-fluid .flexIcons .flexIcon .rightFlexText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .fourIcons .container-fluid .flexIcons .flexIcon .rightFlexText .flexBoldText {
+        font-weight: bold;
+        font-size: 0.9em;
+        color: black;
+    }
+
+    .fourIcons .container-fluid .flexIcons .flexIcon .rightFlexText .flexLightText {
+        font-size: 0.7em;
+        color: black;
+    }
+
+    /*Section Featured Categories*/
+
+    .featuredCategories {
+        margin: 3em auto;
+    }
+
+    .featuredCategories .ftText {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    .featuredCategories .container-fluid {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .featuredCategories .container-fluid .ftCategory {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .featuredCategories .container-fluid .ftCategory .ftCatTop {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        transition: 0.2s ease-in;
+    }
+
+    .ftCatTop:hover {
+        box-shadow: 1px 1px 5px slategrey;
+    }
+
+    #men {
+        cursor: pointer;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Men-Category-430x502.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+
+    #women {
+        cursor: pointer;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Women-Category-430x502.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+
+    #watches {
+        cursor: pointer;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Watch-Category-430x502.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+
+    #bagsBack {
+        cursor: pointer;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Bags-Category-430x502.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+
+    #shoes {
+        cursor: pointer;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Shoes-Category-430x502.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+
+    #accessori {
+        cursor: pointer;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Accessories-Category-430x502.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+
+    .ftBottom {
+        width: 100%;
+    }
+
+    .ftBottom .topAll,
+    .showAll {
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s all;
+    }
+
+    .ftBottom .topAll:hover {
+        color: #CD313E;
+    }
+
+    .ftBottom .showAll {
+        color: #CD313E;
+    }
+
+    .ftBottom nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ftBottom nav ul li a {
+        color: black;
+        text-decoration: none;
+        transition: 0.3s all;
+    }
+
+    .ftBottom nav ul li a:hover {
+        color: #CD313E;
+    }
+
+    #closeFtCat {
+        display: none;
+    }
+
+    /*Featured Categories Alt Hisse*/
+
+    #respClose {
+        display: none;
+    }
+
+    #respOpen {
+        display: block;
+        width: 100%;
+        height: 40em;
+    }
+
+    #respOpen .container-fluid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    /*left*/
+    #respOpen .container-fluid .leftFeaturedAlt {
+        width: 100%;
+        height: 16em;
+    }
+
+    #respOpen .container-fluid .leftFeaturedAlt .leftFeaturedAltFront {
+        width: 100%;
+        margin: 2em 1em;
+    }
+
+    /*right*/
+    #respOpen .container-fluid .rightRespFeaturedAlt {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 20em;
+    }
+
+    #respOpen .container-fluid .rightRespFeaturedAlt .ortaFeaturedAlt {
+        width: 49%;
+    }
+
+    #respOpen .container-fluid .rightRespFeaturedAlt .rightFeaturedAlt {
+        width: 49%;
+    }
+
+    /*right-left-inside*/
+    #respOpen .leftFeaturedAltFront1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 6rem auto;
+    }
+
+    #respOpen .leftFeaturedAltFront1 .nwTop {
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    #respOpen .leftFeaturedAltFront1 .mensfash {
+        color: white;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    #respOpen .leftFeaturedAltFront1 .shopNowFtAlt button {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        font-weight: bold;
+        width: 7em;
+        height: 2.2em;
+    }
+
+    /*right-right-inside*/
+    #respOpen .leftFeaturedAltFront2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5em auto;
+    }
+
+    #respOpen .leftFeaturedAltFront2 .nwTop {
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    #respOpen .leftFeaturedAltFront2 .mensfash {
+        color: white;
+        font-size: 1.2em;
+    }
+
+    #respOpen .leftFeaturedAltFront2 .mensfash .colorRedFaiz {
+        color: #CD313E;
+        font-weight: bold;
+    }
+
+    #respOpen .leftFeaturedAltFront2 .shopNowFtAlt button {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        font-weight: bold;
+        width: 7em;
+        height: 2em;
+    }
+
+    /*Men's Fashion Hisse*/
+
+    .menSFashion {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 50em;
+    }
+
+    .menSFashion .container-fluid {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*left*/
+    .menSFashion .container-fluid .fashionLeft {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.171);
+    }
+
+    .menSFashion .container-fluid .fashionLeft .fashionLeftTop .fashionLeftTopText {
+        color: #B8690D;
+        font-weight: bold;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.145);
+    }
+
+    .menSFashion .container-fluid .fashionLeft .fashionLeftOrta nav {
+        height: 16em;
+    }
+
+    .menSFashion .container-fluid .fashionLeft .fashionLeftOrta nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 80%;
+        align-items: center;
+        width: 80%;
+    }
+
+    .menSFashion .container-fluid .fashionLeft .fashionLeftOrta nav ul li a {
+        color: black;
+        transition: 0.3s all;
+        text-decoration: none;
+    }
+
+    .menSFashion .container-fluid .fashionLeft .fashionLeftOrta nav ul li a:hover {
+        color: #B8690D;
+    }
+
+    /*orta*/
+    .menSFashion .container-fluid .fashionOrta {
+        width: 100%;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/07/home-3-banner-7.jpg);
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    /*right*/
+    .menSFashion .container-fluid .fashionRight {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.171);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menSFashion .container-fluid .fashionRight .fashionRightTop {
+        border-left: none;
+        border-top: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 0.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menSFashion .container-fluid .fashionRight .fashionRightTop .rightTopOne .rightTopTop {
+        margin: 0 auto;
+        width: 85%;
+        height: 50%;
+        background-size: cover;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Men-Brown-Solid-Biker-Jacket-2-430x502.jpg);
+    }
+
+    .menSFashion .container-fluid .fashionRight .fashionRightBottom .rightTopOne .rightTopTop {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Men-Brown-Solid-Biker-Jacket-2-430x502.jpg);
+    }
+
+    .menSFashion .container-fluid .fashionRight .rightTopOne {
+        width: 100%;
+        cursor: pointer;
+        transition: 0.3s all;
+    }
+
+    .menSFashion .container-fluid .fashionRight .rightTopOne:hover {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.429);
+        transition: 0.3s all;
+    }
+
+    .menSFashion .container-fluid .fashionRight .fashionRightBottom {
+        border-left: none;
+        display: none;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menSFashion .container-fluid .fashionRight .rightTopOne .rightTopBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menSFashion .container-fluid .fashionRight .clothesName {
+        font-size: 0.8em;
+    }
+
+    .menSFashion .container-fluid .fashionRight .qiymet {
+        font-weight: bold;
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    /*Women's Fashion Hisse*/
+
+    .womenSFashion {
+        margin: 10em auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 50em;
+    }
+
+    .womenSFashion .container-fluid {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*left*/
+    .womenSFashion .container-fluid .fashionLeft {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.171);
+    }
+
+    .womenSFashion .container-fluid .fashionLeft .fashionLeftTop .fashionLeftTopText {
+        font-weight: bold;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.145);
+    }
+
+    .womenSFashion .container-fluid .fashionLeft .fashionLeftOrta nav {
+        height: 16em;
+    }
+
+    .womenSFashion .container-fluid .fashionLeft .fashionLeftOrta nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 80%;
+        align-items: center;
+        width: 80%;
+    }
+
+    .womenSFashion .container-fluid .fashionLeft .fashionLeftOrta nav ul li a {
+        color: black;
+        transition: 0.3s all;
+        text-decoration: none;
+    }
+
+    .womenSFashion .container-fluid .fashionLeft .fashionLeftOrta nav ul li a:hover {
+        color: #B8690D;
+    }
+
+    /*orta*/
+    .womenSFashion .container-fluid .fashionOrta {
+        display: none;
+    }
+
+    /*right*/
+    .womenSFashion .container-fluid .fashionRight {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.171);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .womenSFashion .container-fluid .fashionRight .fashionRightTop {
+        border-left: none;
+        border-top: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 0.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .womenSFashion .container-fluid .fashionRight .fashionRightTop .rightTopOne .rightTopTop {
+        margin: 0 auto;
+        width: 85%;
+        height: 50%;
+        background-size: cover;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Men-Brown-Solid-Biker-Jacket-2-430x502.jpg);
+    }
+
+    .womenSFashion .container-fluid .fashionRight .fashionRightBottom .rightTopOne .rightTopTop {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Men-Brown-Solid-Biker-Jacket-2-430x502.jpg);
+    }
+
+    .womenSFashion .container-fluid .fashionRight .rightTopOne {
+        width: 100%;
+        cursor: pointer;
+        transition: 0.3s all;
+    }
+
+    .womenSFashion .container-fluid .fashionRight .rightTopOne:hover {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.429);
+        transition: 0.3s all;
+    }
+
+    .womenSFashion .container-fluid .fashionRight .fashionRightBottom {
+        border-left: none;
+        display: none;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .womenSFashion .container-fluid .fashionRight .rightTopOne .rightTopBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .womenSFashion .container-fluid .fashionRight .clothesName {
+        font-size: 0.8em;
+    }
+
+    .womenSFashion .container-fluid .fashionRight .qiymet {
+        font-weight: bold;
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    /*Top Brands Section*/
+
+    .topBrands {
+        width: 100%;
+        height: 10em;
+        margin: 0 auto;
+    }
+
+    .topBrands .container-fluid {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .topBrands .container-fluid .topBrandsTexTop {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .topBrands .container-fluid .topBrandsHeaderLeftRed {
+        width: 30%;
+        border-bottom: 2px solid #CD313E;
+    }
+
+    .topBrands .container-fluid .topBrandsHeader {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.167);
+        width: 70%;
+    }
+
+    .topBrands .container-fluid .topBrandsText {
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        font-size: 1em;
+        width: 100%;
+        color: #333333;
+    }
+
+    .topBrands .container-fluid .topBrandsCarousel {
+        width: 100%;
+        height: 3em;
+        margin: 1em auto;
+    }
+
+    .topBrands .container-fluid .topBrandsCarousel .topBrandsImgs {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .topBrands .container-fluid .topBrandsCarousel .topBrandsImgs img {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: 0.4s all;
+        width: 120px;
+    }
+
+    .topBrands .container-fluid .topBrandsCarousel .topBrandsImgs img:hover {
+        opacity: 1;
+    }
+
+    /*Our Blogs Section*/
+
+    .ourBlogs {
+        width: 100%;
+        height: 40em;
+        margin: 5em auto;
+    }
+
+    .ourBlogs .container-fluid {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .ourBlogs .container-fluid .ourBlogTexTop {
+        display: flex;
+    }
+
+    .ourBlogs .container-fluid .ourBlogHeaderLeftRed {
+        width: 23%;
+        border-bottom: 2px solid #CD313E;
+    }
+
+    .ourBlogs .container-fluid .ourBlogHeader {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.167);
+        width: 77%;
+    }
+
+    .ourBlogs .container-fluid .ourBlogText {
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        font-size: 1.1em;
+        width: 100%;
+        color: #333333;
+    }
+
+    .ourBlogs .container-fluid .ourBlogBox {
+        margin: 1.5em auto;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 70%;
+        background-size: cover;
+    }
+
+    .ourBlogs .container-fluid .ourBlogBox .ourBlogBoxLeft {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .ourBlogs .container-fluid .ourBlogBox .ourBlogBoxLeft .ourBlogBoxImg {
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Beautiful-girl-posing-professional-model-works.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ourBlogs .container-fluid .ourBlogBox .ourBlogBoxRight {
+        display: none;
+    }
+
+    .ourBlogs .container-fluid .ourBlogBox .ourBlogBoxInsText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 1.5em auto;
+    }
+
+    .ourBlogBox .ourBlogBoxInsText .hobmod {
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+
+    .ourBlogBox .ourBlogBoxInsText .btflText {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .ourBlogBox .ourBlogBoxInsText .iconName {
+        font-size: 0.8em;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+    }
+
+    .ourBlogBox .ourBlogBoxInsText .aboutText {
+        font-size: 0.9em;
+        letter-spacing: 0.05em;
+    }
+
+    .ourBlogBox .ourBlogBoxInsText .ourBlogButton {
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 30%;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+
+    .ourBlogBox .ourBlogBoxInsText #hoverRed {
+        transition: 0.4s all;
+        cursor: pointer;
+    }
+
+    .ourBlogBox .ourBlogBoxInsText #hoverRed:hover {
+        color: #CD313E;
+    }
+
+    .ourBlogBox .ourBlogBoxInsText #hoverRed {
+        transition: 0.4s all;
+        cursor: pointer;
+    }
+
+    .ourBlogBox .ourBlogBoxInsText #hoverRed:hover {
+        color: #CD313E;
+    }
+
+    /*Red Background Footer*/
+
+    .redBackgroundFooter {
+        margin: -8em auto;
+        width: 100%;
+        height: 15em;
+        background: #CD313E;
+    }
+
+    .redBackgroundFooter .container-fluid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .redBackgroundFooter .container-fluid .redFootLeft .redFootText {
+        color: white;
+    }
+
+    .redBackgroundFooter .container-fluid .redFootLeft .redFootText .subtoNew {
+        font-weight: bold;
+        font-size: 1.3em;
+        letter-spacing: 0.05em;
+    }
+
+    .redBackgroundFooter .container-fluid .redFootRight {
+        width: 100%;
+        height: 5em;
+        display: flex;
+        align-items: center;
+    }
+
+    .redBackgroundFooter .container-fluid .redFootRight .redFootInputs {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .redBackgroundFooter .container-fluid .redFootRight .redFootInputs input {
+        height: 3em;
+        width: 90%;
+        border-radius: 50px;
+        border: none;
+        border: none;
+        padding: 1.5em;
+        outline: none;
+    }
+
+    .redBackgroundFooter .container-fluid .redFootRight .redFootInputs button {
+        position: relative;
+        border: none;
+        background: #9E7856;
+        color: white;
+        border-radius: 25px;
+        width: 6.7em;
+        height: 2.5em;
+    }
+
+    /*PressMart Footer*/
+
+    .pressMartFooter {
+        width: 100%;
+        height: 20em;
+        margin: 13em auto;
+    }
+
+    .pressMartFooter .container-fluid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pressMartFooter .container-fluid .prsMartFooterLeft .presMartFooterText {
+        font-weight: bold;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .loremIpsumFooter {
+        font-size: 0.9em;
+    }
+
+    .iconFooterText i {
+        margin-right: 1em;
+    }
+
+    .pressMartFooter .container-fluid .botoomfooterText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2.2em;
+    }
+
+    .pressMartFooter .container-fluid .botoomfooterText p {
+        transition: 0.4s all;
+        cursor: pointer;
+    }
+
+    .pressMartFooter .container-fluid .botoomfooterText p:hover {
+        color: #CD313E;
+    }
+
+    .pressMartFooter .container-fluid .topBoldFooterText {
+        font-weight: bold;
+    }
+
+    .prsMartFooterOrta1,
+    .prsMartFooterOrta2,
+    .prsMartFooterRight {
+        display: none;
+    }
+
+    /*PresMart Final Footer Cart*/
+
+    .footerCart {
+        width: 100%;
+        height: 4em;
+        margin: -9em auto;
+    }
+
+    .footerCart .container-fluid {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footerCart .presLytText {
+        font-size: 0.9em;
+    }
+
+    /*PopUp*/
+    .popup .popup-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 25em;
+        height: 25em;
+        background-color: #CD313E;
+    }
+
+    .popup .popup-content .popLeft {
+        display: none;
+    }
+
+    .popup .popup-content .popRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .popup .popRightText {
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .popup .popRightText .upto {
+        font-weight: bold;
+        color: white;
+        font-size: 2em;
+    }
+
+    .popup .popUploremText {
+        color: white;
+        width: 100%;
+    }
+
+    .popup .popUpInput {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 40%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .popup .popup-content .popUpInput .popUpYea {
+        outline: none;
+        border: none;
+        width: 20em;
+        height: 2.5em;
+        border-radius: 25px;
+        padding: 1em;
+    }
+
+    .popup .subsPopUp {
+        width: 6em;
+        height: 2em;
+        outline: none;
+        border: none;
+        background: white;
+        color: #CD313E;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .popup .xBtn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    /*PressMart Footer*/
+
+    .pressMartFooter {
+        width: 100%;
+        height: 20em;
+        margin: 0 auto;
+    }
+
+    .pressMartFooter .container-fluid {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pressMartFooter .container-fluid .prsMartFooterLeft .presMartFooterText {
+        font-weight: bold;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .loremIpsumFooter {
+        font-size: 0.9em;
+    }
+
+    .iconFooterText i {
+        margin-right: 1em;
+    }
+
+    .pressMartFooter .container-fluid .botoomfooterText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2.2em;
+    }
+
+    .pressMartFooter .container-fluid .botoomfooterText p {
+        transition: 0.4s all;
+        cursor: pointer;
+    }
+
+    .pressMartFooter .container-fluid .botoomfooterText p:hover {
+        color: #CD313E;
+    }
+
+    .pressMartFooter .container-fluid .topBoldFooterText {
+        font-weight: bold;
+    }
+
+    /*PresMart Final Footer Cart*/
+
+    .footerCart {
+        width: 100%;
+        height: 5em;
+        margin: 13em auto;
+    }
+
+    .footerCart .container-fluid {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footerCart .presLytText {
+        font-size: 0.9em;
+    }
+
+    /*Bold Size Text*/
+
+    .wideText {
+        height: 15em;
+        background-color: #F8F8F8;
+    }
+
+    .wideText .container-fluid {
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .wideText .container-fluid .BoldSizeTextDiv {
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .BoldSizeTextDiv .BoldSizeText {
+        font-weight: bold;
+        font-size: 2.2em;
+    }
+
+    .wideText .container-fluid .BoldSizeTextDiv nav {
+        width: 20em;
+        margin-right: 1em;
+    }
+
+    .wideText .container-fluid .BoldSizeTextDiv nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .BoldSizeTextDiv nav ul li a {
+        font-weight: bold;
+        transition: 0.3s ease-in;
+        text-decoration: none;
+        color: black;
+    }
+
+    .BoldSizeTextDiv nav ul li a:hover {
+        color: #CD313E;
+    }
+
+    /*Categorys*/
+    .categoryler {
+        margin: 0 auto;
+        width: 100%;
+        height: 85em;
+    }
+
+    .categoryler .container-fluid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .categoryler .container-fluid .sol {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        display: none;
+    }
+
+    .categoryler .container-fluid .sol .boldfirstText {
+        font-weight: bold;
+        font-size: 1.15em;
+    }
+
+    .categoryler .container-fluid .sol .textFirst {
+        color: black;
+        cursor: pointer;
+        transition: 0.3s all;
+    }
+
+    .categoryler .container-fluid .sol .textFirst:hover {
+        color: #CD313E;
+        transition: 0.3s all;
+    }
+
+    .categoryler .container-fluid .sol .third .firstUl p {
+        cursor: pointer;
+    }
+
+    .categoryler .container-fluid .sol #black {
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .categoryler .container-fluid .sol #blue {
+        background-color: blue;
+        border-radius: 50%;
+    }
+
+    .categoryler .container-fluid .sol #brown {
+        background-color: brown;
+        border-radius: 50%;
+    }
+
+    .categoryler .container-fluid .sol #purple {
+        background-color: purple;
+        border-radius: 50%;
+    }
+
+    .categoryler .container-fluid .sol #white {
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .categoryler .container-fluid .sag {
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .categoryler .container-fluid .sag .sagTop {
+        display: flex;
+        width: 100%;
+    }
+
+    .categoryler .sagTop .sagTopLeft {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .categoryler .sagTop .sagTopRight {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .categoryler .sagBottom {
+        display: flex;
+        flex-direction: column;
+        margin: em auto;
+        border-top: 1px solid rgba(112, 128, 144, 0.312);
+        width: 100%;
+        height: 100%;
+    }
+
+    .categoryler .sagBottomTop {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+
+    .categoryler .sagBottomBottom {
+        margin: auto;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+
+    #closeRespBox {
+        display: none;
+    }
+
+    .categoryler .sagBottom .box {
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 1em auto;
+    }
+
+    .categoryler .sagBottom .box:hover {
+        transition: 0.2s ease-in-out;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: 1px 1px 5px rgba(112, 128, 144, 0.621);
+    }
+
+
+    .categoryler .sagBottom .box .boxTop {
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Men-Brown-Solid-Biker-Jacket-430x502.jpg);
+        background-size: cover;
+        transition: 0.4s all;
+        width: 100%;
+        height: 100%;
+    }
+
+    .categoryler .sagBottom .box .boxTop:hover {
+        background-image: url(https://pressmart.presslayouts.com/wp-content/uploads/2022/04/Men-Brown-Solid-Biker-Jacket-2-430x502.jpg);
+        background-size: cover;
+        transition: 0.4s all;
+        width: 100%;
+        height: 100%;
+    }
+
+    .categoryler .sagTopLeft .menText {
+        font-weight: bold;
+        font-size: 1.6em;
+        letter-spacing: 0.05em;
+    }
+
+    .categoryler .sagTopRight .showw {
+        margin-top: 1em;
+    }
+
+    .sagTopRight .showw .oniki {
+        margin-left: 0.5em;
+        box-shadow: 1px 1px 5px slategray;
+        padding: 0.5em;
+    }
+
+    .sagTopRight a {
+        color: black;
+        background: transparent;
+        border: none;
+        box-shadow: 1px 1px 5px slategray;
+    }
+
+    .categoryler .boxBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoryler .boxBottom .iconMain {
+        display: flex;
+        color: gold;
+    }
+
+    .mainName {
+        font-weight: bold;
+    }
+
+    .iconMain p {
+        color: black;
+    }
+
+    .rengMain {
+        font-weight: bold;
+    }
+
+    .dolarMain {
+        font-weight: bold;
+    }
+
+    .selectOpt {
+        border: none;
+        background: #F8F8F8;
+        font-size: 1em;
+        padding: 0.3em;
+    }
+
+    .pressMartFooter {
+        margin: 12em auto;
+    }
+
+    footer {
+        margin: 20em auto;
+    }
+
+}
